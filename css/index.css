@@ -168,9 +168,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 800px) {
+  .container {
+    padding: 0 3rem;
+  }
+}
 header {
-  width: 100%;
   border-bottom: 2px dashed #C0C0C0;
+  position: fixed;
+  top: 0;
+  background: #FFFFFF;
+  width: 100%;
 }
 header .header {
   display: flex;
@@ -205,6 +213,11 @@ header .header .navbar a {
 header .header .navbar a:hover {
   font-size: 1.8rem;
 }
+@media (max-width: 800px) {
+  header .header {
+    padding: 1.5rem 3rem;
+  }
+}
 @media (max-width: 500px) {
   header .header {
     flex-direction: column;
@@ -225,11 +238,22 @@ header .header .navbar a:hover {
   padding: 20px;
 }
 .home .page-header {
+  padding-top: 10rem;
   padding-bottom: 1rem;
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .page-header h2 {
   padding-top: 2rem;
+}
+@media (max-width: 800px) {
+  .home .page-header {
+    padding-top: 7rem;
+  }
+}
+@media (max-width: 500px) {
+  .home .page-header {
+    padding-top: 10rem;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -319,10 +343,5 @@ header .header .navbar a:hover {
   .home .content-pick {
     flex-direction: column;
     padding: 3rem;
-  }
-}
-@media (max-width: 500px) {
-  .home {
-    padding: 0 2.5rem;
   }
 }

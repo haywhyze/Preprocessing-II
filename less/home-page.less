@@ -1,10 +1,19 @@
 .home {
   .page-header {
+    padding-top: 10rem;
     padding-bottom: 1rem;
     border-bottom: 2px dashed @navigation-border;
 
     h2 {
       padding-top: 2rem;
+    }
+
+    @media @tablet {
+      padding-top: 7rem;
+    }
+
+    @media @mobile {
+      padding-top: 10rem;
     }
   }
 
@@ -81,10 +90,6 @@
       flex-direction: column;
       padding: 3rem;
     }
-  }
-
-  @media @mobile {
-    padding: 0 2.5rem;
   }
 }
 

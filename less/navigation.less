@@ -2,6 +2,10 @@
 header {
     width: 100%;
     border-bottom: 2px dashed @navigation-border;
+    position: fixed;
+    top: 0;
+    background: @white;
+    width: 100%;
 
     .header {
         display: flex;
@@ -42,6 +46,10 @@ header {
                 font-size: 1.8rem;
             }
 
+        }
+
+        @media @tablet {
+            padding: 1.5rem 3rem;
         }
 
         @media @mobile {
