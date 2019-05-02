@@ -187,6 +187,11 @@ header .header a {
   font-size: 1.6rem;
   transition: 0.3s all;
 }
+@media (max-width: 500px) {
+  header .header .logo {
+    margin-bottom: 1.5rem;
+  }
+}
 header .header .logo a {
   font-family: 'Indie Flower', cursive;
   font-size: 4rem;
@@ -199,6 +204,14 @@ header .header .navbar a {
 }
 header .header .navbar a:hover {
   font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  header .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+    justify-content: space-between;
+  }
 }
 .footer {
   width: 100%;
