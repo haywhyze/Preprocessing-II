@@ -264,3 +264,16 @@ header .header .navbar a:hover {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  background-color: #117a8b;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #0e6674;
+}
