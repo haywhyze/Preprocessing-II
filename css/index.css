@@ -168,6 +168,38 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  align-items: baseline;
+  transition: 0.3s all;
+}
+header .header a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.6rem;
+  transition: 0.3s all;
+}
+header .header .logo a {
+  font-family: 'Indie Flower', cursive;
+  font-size: 4rem;
+}
+header .header .logo a:hover {
+  font-size: 4.1rem;
+}
+header .header .navbar a {
+  padding: 0 1.6rem;
+}
+header .header .navbar a:hover {
+  font-size: 1.8rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
