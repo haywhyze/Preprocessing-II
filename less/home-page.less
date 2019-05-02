@@ -17,11 +17,13 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      .fullWidthMobile();
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      .fullWidthMobile();
 
       img {
         border-radius: 10px;
@@ -42,11 +44,16 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    .fullWidthMobile();
 
     img {
       border-radius: 10px;
@@ -66,6 +73,19 @@
       .btn {
         .createButton(darken(@eastern-blue, 10%), @white)
       }
+
+      .fullWidthMobile();
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      padding: 3rem;
     }
   }
-}// home
+
+  @media @mobile {
+    padding: 0 2.5rem;
+  }
+}
+
+// home
