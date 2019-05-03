@@ -1,1 +1,21 @@
 // Mixins in here
+.createButton(@bgColor, @color) {
+    background-color: @bgColor;
+    color: @color;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(@bgColor, 5%);
+    }
+}
+
+.fullWidthMobile() {
+    @media @mobile {
+        width: 100%;
+    }
+}
