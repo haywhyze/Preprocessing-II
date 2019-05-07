@@ -213,6 +213,11 @@ header .header .navbar a {
 header .header .navbar a:hover {
   font-size: 1.8rem;
 }
+@media (max-width: 500px) {
+  header .header .navbar a {
+    padding: 0 1rem;
+  }
+}
 @media (max-width: 800px) {
   header .header {
     padding: 1.5rem 3rem;
